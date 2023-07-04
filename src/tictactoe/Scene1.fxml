@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="scenePane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1f2030;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TicTacToe.SceneController">
+    <stylesheets>
+    </stylesheets>
+   <children>
+      <Button contentDisplay="CENTER" layoutX="283.0" layoutY="193.0" mnemonicParsing="false" onAction="#switchToScene2" prefHeight="0.0" prefWidth="51.0" style="-fx-background-color: transparent; -fx-background-radius: 14; -fx-border-color: #00ff44; -fx-border-radius: 90;" text="▶" textAlignment="CENTER" textFill="#00ff44">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Segoe UI Black" size="32.0" />
+         </font>
+         <opaqueInsets>
+            <Insets bottom="4.0" right="3.0" top="12.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets top="2.0" />
+         </padding>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Text fill="#00ff44" layoutX="151.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tic Tac Toe" textAlignment="CENTER">
+         <font>
+            <Font name="Russo One" size="55.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <Text fill="#a51ce5" layoutX="62.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose :" textAlignment="CENTER">
+         <font>
+            <Font name="Russo One" size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="LogoutButton" layoutX="447.0" layoutY="324.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: transparent;" text="Quit" textFill="#a51ce5">
+         <font>
+            <Font name="Russo One" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="166.0" layoutY="326.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="34.0" style="-fx-background-color: transparent;" text="X" textFill="#00f1ff" fx:id="xbutton">
+         <font>
+            <Font name="Russo One" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="obutton" layoutX="203.0" layoutY="324.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="58.0" style="-fx-background-color: transparent;" text="O" textFill="#00f9ff">
+         <font>
+            <Font name="Russo One" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ToggleButton fx:id="musicToggleButton" layoutX="483.0" layoutY="26.0" mnemonicParsing="false" onAction="#handleMusicToggle" style="-fx-background-color: transparent;" text="🔊" textAlignment="CENTER" textFill="#a11ee3">
+         <font>
+            <Font name="Russo One" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect></ToggleButton>
+   </children>
+</AnchorPane>
