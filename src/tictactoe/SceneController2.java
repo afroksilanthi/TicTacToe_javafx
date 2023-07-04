@@ -193,7 +193,7 @@ public void restartGame(ActionEvent event) {
         boolean isBoardFull = true;
         String[] symbols = {"X", "O"};
         for (String symbol : symbols) {
-            //orizontia
+      //horizontal
             if (button1.getText().equals(symbol) && button2.getText().equals(symbol) && button3.getText().equals(symbol)) {
                 handleWin(symbol);
                 Line1.setVisible(true);
@@ -203,7 +203,8 @@ public void restartGame(ActionEvent event) {
             } else if (button7.getText().equals(symbol) && button8.getText().equals(symbol) && button9.getText().equals(symbol)) {
                 handleWin(symbol);
                 Line3.setVisible(true);
-            } //katheta
+            } 
+      //vertical
             else if (button1.getText().equals(symbol) && button4.getText().equals(symbol) && button7.getText().equals(symbol)) {
                 handleWin(symbol);
                 Line4.setVisible(true);
@@ -213,7 +214,8 @@ public void restartGame(ActionEvent event) {
             } else if (button3.getText().equals(symbol) && button6.getText().equals(symbol) && button9.getText().equals(symbol)) {
                 handleWin(symbol);
                 Line6.setVisible(true);
-            } //diagonia
+            } 
+     //diagonally
             else if (button1.getText().equals(symbol) && button5.getText().equals(symbol) && button9.getText().equals(symbol)) {
                 handleWin(symbol);
                 Line7.setVisible(true);
